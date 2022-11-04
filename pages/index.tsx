@@ -1,19 +1,14 @@
-import { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-export const config = {
-  runtime: "experimental-edge",
-};
-
-export const getServerSideProps: GetServerSideProps = async (ctx) => {
-  return {
-    props: {
-      serverMsg: "Hello from Server!",
-    },
-  };
-};
+// export const getServerSideProps: GetServerSideProps = async (ctx) => {
+//   return {
+//     props: {
+//       serverMsg: "Hello from Server!",
+//     },
+//   };
+// };
 
 export default function Home(props: { serverMsg: string }) {
   return (
